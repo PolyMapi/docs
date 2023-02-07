@@ -1,30 +1,38 @@
-Prérequis :
- - Logiciels : VSCode avec l'extension "Remote SSH de Microsoft", Raspberry Pi Imager (testé sur la version 1.7.3)
- - Matériel : Un Raspberry, un téléphone permettant de réaliser un partage de connexion
+Prerequisites:
 
-Générer sur l'ordinateur une clé SSH avec la commande `ssh-keygen -t ed25519`
+ - Software: VSCode with the Microsoft "Remote SSH" extension, Raspberry Pi Imager (tested on version 1.7.3)
+ - Hardware: A Raspberry, a phone allowing connection sharing
 
-Insérer la micro-SD du Raspberry dans le lecteur de l'ordinateur.
+Generate an SSH key on the computer with the command `ssh-keygen -t ed25519`
 
-Démarrer le partage de connexion. Connecter l'ordinateur au partage. Noter le SSID et le mot de passe. S'assurer qu'il soit actif tout au long de la manoeuvre.
+Insert the micro-SD of the Raspberry in the drive of the computer
 
-Ouvrir Raspberry PI Manager
-Dans système d'exploitation/Choisissez l'OS, prendre "Raspberry PI OS (32-bit)"
-Dans le menu engrennage qui vient d'appraître, remplir les champs suivants :
- - Set hostname –> Laisser désactivé
- - Enable SSH -> Allow public authentication only -> Activer, et rentrer le contenu de la clé publique
- - Set username and password -> Activer, et rentrer les identifiants de votre choix
- - Configure wireless LAN -> Activer, et rentrer le SSID et le mot de passe du partage de connexion
- - Wireless LAN country -> Pays dans lequel vous le réalisez (nous avons mis FR)
- - Set locale settings -> Laisser désactivé
- - Persistent settings -> Activez/Désactivez selon votre choix. (Note : La télémétrie implique l'envoi de données, ce qui peut être un coût supplémentaire lors d'un partage de connexion)
-Dans Stockage, choisir la Micro SD
-Cliquer sur Ecrire, et confirmez l'écrasement des données
+Start the connection share. Connect the computer to the share. Note the SSID and password. Make sure it is active throughout the process.
 
-Une fois la procédure terminée, éjecter la micro-SD et la réinserrer dans le Raspberry, puis allumer ce dernier.
-Lancer VSCode
-Cliquer sur le petit bouton vert en bas à gauche de l'écran
-Dans la liste des actions affichée en haut de l'écran, se connecter en SSH
-Indiquer la connexion à nomdutilisateurchoisi@raspberrypi.
-Une fois connecté, le bouton vert en bas à gauche indiquera la connexion en SSH.
-Une fenêtre s'ouvira, permettant de travailler sur le Raspberry et d'accéder à ses fichiers.
+Open Raspberry PI Manager
+In Operating System/Choose OS, select "Raspberry PI OS (32-bit)"
+In the menu that just appeared, fill in the following fields:
+
+ - Set hostname -> Leave disabled
+ - Enable SSH -> Allow public authentication only -> Enable, and enter the content of the public key
+ - Set username and password -> Enable, and enter the credentials of your choice
+ - Configure wireless LAN -> Enable, and enter the SSID and password of the connection share
+ - Wireless LAN country -> Country in which you realize it (we put FR)
+ - Set locale settings -> Leave disabled
+ - Persistent settings -> Enable/Disable according to your choice. (Note: Telemetry involves sending data, which can be an additional cost when sharing a connection)
+In Storage, choose the Micro SD
+Click on Write, and confirm the overwriting of data
+
+Once the procedure is complete, eject the micro-SD and reinsert it into the Raspberry, then turn it on
+
+Launch VSCode
+
+Click on the small green button at the bottom left of the screen
+
+In the list of actions displayed at the top of the screen, connect via SSH
+
+Indicate the connection to chosen user name@raspberrypi
+
+Once connected, the green button at the bottom left will indicate the SSH connection
+
+A window will open, allowing you to work on the Raspberry and access its files.
