@@ -4,11 +4,11 @@
 
 ## hardware
 We have several hardware available to us :
--  a ZED-F9P module receives the GPS positions from the GNSS antena. It also receives the correction data from centipede, through a NTRIP client (which must be connected to the Internet). It returns more accurate geolocalisation positions (accurate to about 1 centimeter)
+-  a [ZED-F9P](https://www.mikroe.com/gnss-rtk-click) module receives the GPS positions from the GNSS antena. It also receives the correction data from centipede, through a NTRIP client (which must be connected to the Internet). It returns more accurate geolocalisation positions (accurate to about 1 centimeter)
 ![GNSSRKTCLIC](https://github.com/PolyMapi/docs/blob/main/images/F9P_RTK.jpg)
 - a GNSS antena which allows to receive geolocalisation signals (GPS, BeiDou, Galileo, GLONASS)
 - a bluetooth antena that permits to communicate with a smartphone using bluetooth. Especially, this smartphone is the NTRIP client which recieves data from centipede.
-- an ESP32 
+- an [ESP32](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf) 
 - a TinyGS card that links up the ESP32 with other devices
 
 ## connections
