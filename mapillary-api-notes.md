@@ -171,3 +171,82 @@ curl https://graph.mapillary.com/token \
   "token_type": "bearer"
 }
 ```
+
+# Vector tiles
+
+Vector tiles provide an easy way to visualize vast amounts of data. Mapillary APIs are heavily based on vector tiles to provide the developers with flexibility to programmatically interact with the data they contain in custom ways. Vector tiles support filtering and querying rendered features. Mapillary vector tiles follow the [Mapbox tile specification](https://docs.mapbox.com/vector-tiles/specification/).
+
+## Coverage tiles
+
+Endpoint: https://tiles.mapillary.com/maps/vtp/mly1_public/2/{z}/{x}/{y}?access_token=XXX
+
+Contain positions of images and sequences with original geometries (not computed)
+
+- layer name: overview
+  - zoom: 0 - 5 (inclusive)
+  - geometry: Point
+  - data source: images
+  - properties
+    - **captured_at**, int, timestamp in ms since epoch ;
+    - **id**, int, ID of the image ;
+    - **sequence_id**, string, ID of the sequence this image belongs to ;
+    - **is_pano**, bool, if it is a panoramic image.
+
+- layer name: sequence
+  - zoom: 6-14 (inclusive)
+  - geometry: LineString
+  - data source: images captured in a single collection, sorted by captured_at
+  - properties
+    - **captured_at**, int, timestamp in ms since epoch ;
+    - **id**, string, ID of the sequence (the legacy sequence key) ;
+    - **image_id**, int, ID of the "best" (first) image representing the sequence ;
+    - **organization_id** (optional), int, ID of the organization this image belongs to ;
+    - **is_pano**, bool, if it is a panoramic sequence.
+
+- layer name: image
+  - zoom: 14
+  - geometry: Point
+  - data source: images
+  - properties
+    - **captured_at**, int, timestamp in ms since epoch ;
+    - **compass_angle**, int, the compass angle of the image ;
+    - **id**, int, ID of the image ;
+    - **sequence_id**, string, ID of the sequence this image belongs to ;
+    - **organization_id** (optional), int, ID of the organization this image belongs to ;
+    - **is_pano**, bool, if it is a panoramic image.
+
+## Coverage tiles (computed)
+
+Endpoint: https://tiles.mapillary.com/maps/vtp/mly1_computed_public/2/{z}/{x}/{y}?access_token=XXX
+
+Contain positions of images and sequences with computed geometries (not original).
+
+The tile metadata is exactly the same as **Coverage tiles**.
+
+## Map feature tiles, points
+
+Endpoint: https://tiles.mapillary.com/maps/vtp/mly_map_feature_point/2/{z}/{x}/{y}?access_token=XXX
+
+These tiles represent positions of map features which are detected on the Mapillary platform and are not traffic signs.
+
+- layer name: **point**
+  - zoom: 14
+  - geometry: Point
+  - data source: map features
+  - properties
+    - **id**, int, ID of the map feature
+    - **value**, string, name of the class which this object represent
+    - **first_seen_at**, int, timestamp in ms since epoch, capture time of the earliest image on which the detection contribute to this map feature
+    - **last_seen_at**, int, timestamp in ms since epoch, capture time of the latest image on which the detection contribute to this map feature
+
+You can see the full list of available points [here](https://www.mapillary.com/developer/api-documentation/points).
+
+## Map feature tiles, traffic signs
+
+Endpoint: https://tiles.mapillary.com/maps/vtp/mly_map_feature_traffic_sign/2/{z}/{x}/{y}?access_token=XXX
+
+These tiles represent positions of map features which are detected on the Mapillary platform and are traffic signs.
+
+The tile metadata is exactly the same as **Map feature tiles, points**, except that the layer name is **traffic_sign**.
+
+You can see the full list of available traffic signs [here](https://www.mapillary.com/developer/api-documentation/traffic-signs).
