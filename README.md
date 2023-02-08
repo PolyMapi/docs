@@ -8,4 +8,4 @@ This repo contains all the documentation
 | --------- | ------------ | -------------- |
 | [docRTK](https://github.com/PolyMapi/docs/blob/main/docRTK.md) | Documentation about the use of the F9P RTK board and the ESP32 board | [sourceRTK](https://github.com/PolyMapi/sourceRTK) |
 | [Rapport](https://github.com/PolyMapi/docs/blob/main/Rapport.md) | Project report | |
-| [Tutoriel connexion SSH Raspberry Pi par partage de connexion](https://github.com/PolyMapi/docs/blob/main/configuration-raspberry-ssh-partage-connexion.md)| Tethered SSH connexion over Raspberry Pi | |
+| [Tutorial](https://github.com/PolyMapi/docs/blob/main/configuration-raspberry-ssh-partage-connexion.md)| Tethered SSH connexion over Raspberry Pi | |
