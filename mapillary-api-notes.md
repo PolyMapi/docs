@@ -564,3 +564,19 @@ Parameters
 Requests to **graph.mapillary.com** are limited to 50,000 per minute per app. Exceeding the limit your app will be throttled and users will receive "Application request limit reached" error.
 
 Requests to **tiles.mapillary.com** are limited to 50,000 per day.
+
+# Glossary
+
+## Client access token
+
+The client access token is a token required for all API calls, whether they're Entity API calls or vector tile requests. This token identifies the application used for generating it and enables making requests on behalf of it. If a hacker steals it, they would be able to make a request on behalf of your application!
+
+## User access token
+
+The user access token is a token obtained by the user when authentication through the OAuth2 flow. It authenticates both the user and the application it used. It is preferred to send user tokens as the authorization header (see Authentication section). This token is equivalent to a user password, if a hacker steals it, they'll be able to call the API on behalf of the user.
+
+[Get Access Token](https://www.mapillary.com/dashboard/developers)
+
+### Useful link
+
+[PointsTraffic signs](https://www.mapillary.com/developer/api-documentation/points)
