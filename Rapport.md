@@ -16,15 +16,20 @@
 
 # Rappel du sujet/besoin et cahier des charges
 
+Mapillary est un service de visualisation d'espaces publics, à l'instar de Google Streetview. Sa particularité vient du fait que les usagers fournissent les photos panoramiques, sur le principe de base des contributions.
 
+Les caméras 360° prennent des photos panoramiques, et Ricoh est un des leaders du marché avec ses caméras grand public Theta. Les photos/vidéos prises par ces caméras peuvent être envoyées à Mapillary. Cependant, il faut géolocaliser ces photographies de manière précise. Pour cela, il est possible de coupler les prises avec les positions relevées au moyen de rovers GNSS RTK relevant des positions centimétriques.
+
+L'objectif du projet est de développer des outils facilitant la contribution des photos/vidéos 360° géolocalisées précisément.
 
 # Technologies employées
 
-
+ - Rover GNSS RTK
+ - Caméra Ricoh Theta
 
 # Architecture technique
 
-
+![Architecture of the project](images/Architecture.png)
 
 # Réalisations techniques
 
@@ -36,7 +41,7 @@
 
 # Outils
 
-
+Discord, Google Drive, Android Studio
 
 # Métriques logiciels
 
@@ -48,6 +53,6 @@
 
 # Glossaire
 
-RTK
+RTK : Real Time Kinetic
 
 # Bibliographie
