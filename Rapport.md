@@ -33,7 +33,7 @@ L'objectif du projet est de développer des outils facilitant la contribution de
 
 # Réalisations techniques
 
-
+Nous avons créé une application qui permet de prendre une photographie avec la caméra, de la télécharger depuis la mémoire de cette même caméra, puis de l'envoyer vers les services de Mapillary.
 
 # Gestion de projet
 
