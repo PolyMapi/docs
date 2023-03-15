@@ -1,9 +1,8 @@
 <h1 align="center">Rapport Projet Mapillary - RTK</h1>
 
-FODOR Gergely -
-CONJARD Samuel -
-JARDIN Baptiste -
-KACHA Tom
+Porteur de projet : PALIX Nicolas
+
+Auteurs : FODOR Gergely - CONJARD Samuel - JARDIN Baptiste - KACHA Tom
 
 <img align="left" src="images/Logo_polytech.png" alt="logo Polytech" height="100">
 <img align="right" src="images/logo-lig.png" alt="logo LIG" height="100">
