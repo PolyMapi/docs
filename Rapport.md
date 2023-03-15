@@ -205,3 +205,14 @@ Nombre de commits : 4
 
 Nombre de commits : ???
 
+# Bibliographie
+
+API Mapillary : https://www.mapillary.com/developer/api-documentation/?locale=fr_FR
+Caméras recommandées par Google street view : https://support.google.com/maps/answer/6281877?hl=fr#zippy=
+Informations techniques de la GoPro Max : https://gopro.com/fr/fr/shop/cameras/max/CHDHZ-202-master.html?gclid=4ddad07bd8f11eeedf59b470e387d3a7&gclsrc=3p.ds&msclkid=4ddad07bd8f11eeedf59b470e387d3a7
+API de Ricoh Theta : https://github.com/ricohapi/theta-api-specs/tree/main/theta-web-api-v2.1/getting_started.md
+Bibliothèque permettant d'utiliser un grand nombre de modules, de protocoles et de plates-formes d'émetteurs-récepteurs différents sur l'IDE Arduino : https://github.com/thingsat/tinygs_2g4station/tree/main/Firmware/Arduino
+Exemples RTK avec un terminal Wio : https://github.com/CampusIoT/tutorial/tree/master/wioterminal/examples/ZED-F9P_RTK
+Ce repository contient le manuel du produit RTK et le micrologiciel qui s'exécute sur la gamme de produits SparkFun RTK : https://github.com/sparkfun/SparkFun_RTK_Firmware
+Tutoriel permettant de créer l'environnement de construction pour le micrologiciel SparkFun RTK : https://docs.sparkfun.com/SparkFun_RTK_Firmware/firmware_update/#build-environment
+Tutoriel de création de base de données SQLite sous Android : https://developer.android.com/training/data-storage/sqlite#java
