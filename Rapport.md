@@ -66,3 +66,76 @@ Architecture du projet
 
   L’architecture que nous avons adoptée relie les deux composants électroniques à l’application Android. La caméra 360° est capable de se connecter en Wi-Fi, tandis que la carte ESP32 utilise le Bluetooth. La carte GNSS RTK, surmontée du module ZED-F9P, est reliée à l’ESP32 en Wi-Fi, tandis que le module reçoit des coordonnées GPS. Finalement, les photographies 360° aux coordonnées corrigées seront téléversées sur Mapillary en se connectant au service en Wi-Fi.
 
+## Gestion de projet
+
+#### Méthode
+
+  Pour notre projet, nous avons utilisé la méthodologie agile Scrum, qui est l'une des approches les plus populaires de la méthodologie agile. La première étape que nous avons suivie a été la planification du sprint, qui est une période de deux semaines pendant laquelle nous avons travaillé sur une partie spécifique de notre projet. Nous avons évalué ce que nous pouvions réaliser pendant cette période et nous avons déterminé les tâches que chaque membre de l'équipe devait accomplir. Puis, chaque jour, nous faisions une réunion quotidienne de 10 à 15 minutes à la manière d’un Daily Scrum. Au cours de ces réunions, nous avons discuté de l'avancement de notre travail, des obstacles rencontrés et des tâches que nous avions prévues pour la journée. Enfin, à chaque fin de sprint, nous avons présenté notre travail accompli au cours du sprint et discuté des résultats entre nous et avec notre tuteur Nicolas Palix que nous voyions tous les lundis. Cela nous permettait d’examiner ce qui avait bien fonctionné pendant le sprint et ce qui pouvait être amélioré pour le suivant.
+
+  La méthodologie agile Scrum nous a été très utile pour collaborer. En effet, cela nous a permis de travailler en équipe pour résoudre les problèmes et atteindre les objectifs de notre projet. De plus, cette gestion de projet agile nous a aidé à gagner en flexibilité car nous avons pu adapter les plans et les tâches en fonction de l’évolution du projet, des changements de priorités et des imprévus. Notre équipe a aussi pu obtenir des résultats rapides et réguliers car la méthodologie agile permettait de valider notre travail et de nous assurer qu'on était sur la bonne voie pour atteindre les objectifs du projet. La communication régulière et la collaboration au sein de l'équipe ont également été améliorées grâce à cette méthodologie qui nous a semblé très innovante pour la gestion de projet.
+
+
+#### Rôles
+
+  Les rôles de notre projet ont été répartis de la façon suivante :
+
+ - Gergely Fodor était notre chef de projet et responsable base de données ;
+ - Tom Kacha était le Scrum Master ainsi que le responsable caméra ;
+ - Baptiste Jardin était le responsable GPS ;
+ - Samuel Conjard était le responsable gestion de données.
+
+#### Outils de gestion de projet
+
+  Nous avons créé un Trello afin de mettre en place la méthodologie Agile susdite. À chaque tâche à effectuer, nous l’ajoutions au trello puis nous la déplacions lorsque cette dernière était terminée.
+
+![Trello picture](images/Trello.png)
+
+Gestion de projet sur Trello
+
+
+#### Planning
+
+  Nous avons enfin créé un diagramme de Gantt afin de pouvoir comparer le planning prévisionnel et le planning effectif.
+
+![Previsional schedule](images/Provisional_schedule.png)
+
+Planning prévisionnel
+
+![Effective_schedule](images/Effective_schedule.png)
+
+Planning effectif
+
+## Outils
+
+Nous avons utilisé plusieurs outils afin de mener à bien notre projet. Tout d’abord, afin de bien collaborer, nous avons mis en place un serveur discord afin de pouvoir plus facilement communiquer. Aussi, ce serveur discord était relié à notre dépôt Git, ce qui permettait d’afficher directement depuis discord les nouveaux commits et d’être notifié en temps réel. Nous avons aussi utilisé Google Drive afin de pouvoir partager des documents tels que des schémas ou encore des rapports ou présentations. Nous avons également utilisé Canva afin de réaliser notre poster en Anglais et notre flyer.
+
+Comme mentionné ci-dessus, nous avons créé un trello afin de nous aider à mettre en place une méthodologie agile.
+
+Enfin, nous avons utilisé Android Studio comme IDE afin de développer notre application android. Nous avons développé notre application en Java et Android Studio mettait à disposition un mode débogage avec un téléphone portable android, ainsi qu’un émulateur permettant de faire tourner un système Android virtuel sur un ordinateur.
+
+## Métriques logiciels
+
+Temps ingénieur total : 45 jours x 7 h/jours x 4 = 1260h
+
+#### Controller :
+
+![Metrique controller](images/metrique_controller.png)
+
+Nombre de commits : 43
+
+#### SourceTHETA : 
+
+![Metrique sourceRTK](images/metrique_sourceRTK.png)
+
+Nombre de commits : 7
+
+#### SourceRTK :
+
+![Metrique sourceTHETA](images/metrique_sourceTHETA.png)
+
+Nombre de commits : 4
+
+#### Doc :
+
+Nombre de commits : ???
+
