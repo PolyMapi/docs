@@ -12,18 +12,18 @@ KACHA Tom
 </p>
 
 # Sommaire
- - Rappel du sujet/besoin et cahier des charges
- - Technologies employées
- - Architecture technique
- - Réalisations techniques
- - Gestion de projet (méthode, planning prévisionnel et effectif, gestion des risques, rôles des membres ...)
- - Outils (collaboration, CD/CI ...)
- - Métriques logiciels : lignes de code, langages, performance, temps ingénieur (d'après vos journaux), la répartition des lignes de code et des commits en pourcentage entre les membres du projet ...)
- - Conclusion (Retour d'expérience)
- - Glossaire
- - Bibliographie
+ - [Rappel du sujet/besoin et cahier des charges](#sujet)
+ - [Technologies employées](#tech)
+ - [Architecture technique](#archi)
+ - [Réalisations techniques](#real)
+ - [Gestion de projet (méthode, planning prévisionnel et effectif, gestion des risques, rôles des membres ...)](#gestion)
+ - [Outils (collaboration, CD/CI ...)](#outils)
+ - [Métriques logicielles : lignes de code, langages, performance, temps ingénieur (d'après vos journaux), la répartition des lignes de code et des commits en pourcentage entre les membres du projet ...)](#metriques)
+ - [Conclusion (Retour d'expérience)](#conclusion)
+ - [Glossaire](#glossaire)
+ - [Bibliographie](#bibli)
 
-# Rappel du sujet
+# Rappel du sujet <a id="sujet"></a>
 
   Mapillary est un service de visualisation d'espaces publics, à l'instar de Google Streetview. Ce service est basé sur les contributions de ses utilisateurs. Ainsi, quand un usager téléverse une photographie (à 360 degrés ou non), Mapillary traitera l’image de différentes manières, par exemple en floutant les visages/plaques d'immatriculation, puis la téléversera à son tour sur OpenStreetMap. Notre projet vise à développer des outils facilitant la contribution de photos/vidéos 360°, géolocalisées au centimètre près.
 
@@ -31,7 +31,7 @@ KACHA Tom
 Le but de notre projet est de créer un système permettant de relier ensemble une caméra 360° ainsi qu’un module RTK pour automatiser le processus de prise et téléversement de photographie 360° sur les services de Mapillary.
 
 
-# Technologies employées
+# Technologies employées <a id="tech"></a>
 
   Nous avons utilisé un certain nombre de technologies différentes au cours du projet.
 
@@ -61,7 +61,7 @@ Le but de notre projet est de créer un système permettant de relier ensemble u
 
   Le service fournit également une API, qui permet de programmer une application utilisant certaines des fonctionnalités proposées par Mapillary. Nous souhaitions nous servir de l’API pour téléverser les photos corrigées à partir d’une application mobile.
 
-# Architecture technique
+# Architecture technique <a id="archi"></a>
 
 ![Project architecture](images/Project-architecture.png)
 
@@ -69,7 +69,7 @@ Architecture du projet
 
   L’architecture que nous avons adoptée relie les deux composants électroniques à l’application Android. La caméra 360° est capable de se connecter en Wi-Fi, tandis que la carte ESP32 utilise le Bluetooth. La carte GNSS RTK, surmontée du module ZED-F9P, est reliée à l’ESP32 en Wi-Fi, tandis que le module reçoit des coordonnées GPS. Finalement, les photographies 360° aux coordonnées corrigées seront téléversées sur Mapillary en se connectant au service en Wi-Fi.
 
-# Réalisations techniques
+# Réalisations techniques <a id="real"></a>
 
   Nous avons créé une application qui permet à la fois de prendre des photographies 360° avec la caméra, ainsi que de les télécharger depuis la mémoire de cette même caméra.
 
@@ -135,7 +135,7 @@ des images capturées. Cette Task sert à télécharger ces images à partir de 
   Ce projet est un projet de recherche. La problématique étant ouverte et le projet étant limité à une durée de 2 mois, il est naturel que nous n’ayons pas pu réaliser tous nos objectifs. Notre plus grande limite a été l’intégration du RTK. Malgré le fait que nous ayons consacré beaucoup de temps et de ressources humaines à cette tâche, nous n’avons malheureusement pas eu le temps d’extraire la géolocalisation centimétrique. Ceci étant dit, nous avons construit le reste du projet avec un objectif de maintenabilité. En effet, l’application Android fonctionne actuellement avec les coordonnées GPS du smartphone (faible précision) mais si, dans le futur, notre projet est repris, il n’y aura rien à modifier dans le code ou la structure de l’application afin de supporter le RTK. Il suffira d’utiliser un client Ntrip comme BlueTooth GNSS et de le sélectionner comme application de position fictive dans les options de développeurs.
 
 
-# Gestion de projet
+# Gestion de projet <a id="gestion"></a>
 
 ### Méthode
 
@@ -174,7 +174,7 @@ Planning prévisionnel
 
 Planning effectif
 
-# Outils
+# Outils <a id="outils"></a>
 
 Nous avons utilisé plusieurs outils afin de mener à bien notre projet. Tout d’abord, afin de bien collaborer, nous avons mis en place un serveur discord afin de pouvoir plus facilement communiquer. Aussi, ce serveur discord était relié à notre dépôt Git, ce qui permettait d’afficher directement depuis discord les nouveaux commits et d’être notifié en temps réel. Nous avons aussi utilisé Google Drive afin de pouvoir partager des documents tels que des schémas ou encore des rapports ou présentations. Nous avons également utilisé Canva afin de réaliser notre poster en Anglais et notre flyer.
 
@@ -182,7 +182,7 @@ Comme mentionné ci-dessus, nous avons créé un trello afin de nous aider à me
 
 Enfin, nous avons utilisé Android Studio comme IDE afin de développer notre application android. Nous avons développé notre application en Java et Android Studio mettait à disposition un mode débogage avec un téléphone portable android, ainsi qu’un émulateur permettant de faire tourner un système Android virtuel sur un ordinateur.
 
-# Métriques logiciels
+# Métriques logicielles <a id="metriques"></a>
 
 Temps ingénieur total : 45 jours x 7 h/jours x 4 = 1260h
 
@@ -208,7 +208,7 @@ Nombre de commits : 4
 
 Nombre de commits : ???
 
-# Bibliographie
+# Bibliographie <a id="bibli"></a>
 
 API Mapillary : https://www.mapillary.com/developer/api-documentation/?locale=fr_FR
 
