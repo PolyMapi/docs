@@ -208,7 +208,7 @@ Nombre de commits : 4
 
 Nombre de commits : 30
 
-# Conclusion
+# Conclusion <a id="conclusion"></a>
 
 Le projet Mapillary-RTK était notre projet de fin d’étude, il représente donc l’accumulation de savoir et de savoir faire que nous avons appris durant notre cursus de trois ans tout en nous permettant de découvrir des nouvelles technologies.
 
@@ -220,7 +220,7 @@ Ce projet nous a demandé de travailler en groupe de 4 durant 2 mois à plein te
 
 Ce projet était pour nous l’occasion de mettre en pratique tout ce que l’on a appris durant notre formation. Bien que nous n'ayons pas pu remplir tous les objectifs du projet, nous sommes fiers du résultat que nous avons produit. Nous avons appris beaucoup de connaissances et nous espérons pouvoir les mettre en pratique dans notre vie professionnelle d’ingénieur informaticien.
 
-# Glossaire
+# Glossaire <a id="glossaire"></a>
 
 * API : Application Programming Interface
 
