@@ -208,6 +208,38 @@ Nombre de commits : 4
 
 Nombre de commits : ???
 
+# Conclusion
+
+Le projet Mapillary-RTK était notre projet de fin d’étude, il représente donc l’accumulation de savoir et de savoir faire que nous avons appris durant notre cursus de trois ans tout en nous permettant de découvrir des nouvelles technologies.
+
+Nous avons pu travailler avec des cartes électroniques telles que la GNSS RTK click et l’ESP32. Nous avions jusqu’alors très peu travaillé avec ce type de technologie (SPC en troisième année mais nous étions très encadrés), et ce fut très intéressant d’étudier les composants et les différents liens entre eux. Malheureusement, nous n’avons pas pu remplir nos objectifs par manque de temps et d’expertise, mais le temps que nous avons consacré à cette partie nous a apporté beaucoup d’expérience.
+
+Étant donné que notre prototype de contrôleur est une application sur smartphone, nous avons eu l’occasion de développer sous Android. Au cours de notre formation, nous n’avons pas de cours sur Android et ce fut pour nous une découverte complète de cette technologie. Le développement mobile étant de plus en plus répandu dans le monde professionnel, cette expérience sera très certainement utile pour nous dans le futur. 
+
+Ce projet nous a demandé de travailler en groupe de 4 durant 2 mois à plein temps, une gestion de projet rigoureuse et efficace était donc nécessaire. Nous avons décidé de mettre en œuvre les méthodes de gestion de projet que nous avons apprises durant notre formation. Nous nous sommes notamment inspirés de l’ECOM du S9 en nommant un Scrum Master et en ayant des daily meetings tous les matins.
+
+Ce projet était pour nous l’occasion de mettre en pratique tout ce que l’on a appris durant notre formation. Bien que nous n'ayons pas pu remplir tous les objectifs du projet, nous sommes fiers du résultat que nous avons produit. Nous avons appris beaucoup de connaissances et nous espérons pouvoir les mettre en pratique dans notre vie professionnelle d’ingénieur informaticien.
+
+# Glossaire
+
+* API : Application Programming Interface
+
+* Client ntrip : Reçoit les données de correction de position et les transmet au module F9P
+
+* F9P : Module qui reçoit les données de correction et la position GPS, et renvoie la position précise au centimètre près
+
+* GNSS : Global Navigation Satellite System
+
+* GPS : Global Positioning System
+
+* HTML : Hypertext Markup Language
+
+* I2C : Inter-Integrated Circuit
+
+* Mapillary : Service de visualisation d'espaces publics, à l'instar de Google Street View
+
+* RTK : Real Time Kinetic
+
 # Bibliographie <a id="bibli"></a>
 
 [API Mapillary](https://www.mapillary.com/developer/api-documentation/?locale=fr_FR)
