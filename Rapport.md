@@ -1,8 +1,8 @@
 <h1 align="center">Rapport Projet Mapillary</h1>
 
-FODOR Gergely
-CONJARD Samuel
-JARDIN Baptiste
+FODOR Gergely -
+CONJARD Samuel -
+JARDIN Baptiste -
 KACHA Tom
 
 <img align="left" src="images/Logo_polytech.png" alt="logo Polytech" height="100">
