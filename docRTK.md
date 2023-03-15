@@ -1,6 +1,6 @@
 # RTK documentation
 
- This doc describes the hardware we have, and how to setup the connections
+ This doc describes the hardware we have, how to setup the connections and all the information regarding the firmware.
 
 ## Hardware
 We have several hardware available to us :
@@ -11,7 +11,7 @@ We have several hardware available to us :
 
 - a GNSS antena that allows to receive geolocalisation signals (GPS, BeiDou, Galileo, GLONASS)
 
-- a bluetooth antena that allows to communicate with a smartphone using bluetooth. This smartphone is the NTRIP client which recieves data from centipede.
+- a bluetooth antena that allows to communicate with a smartphone using bluetooth. This smartphone runs the NTRIP client which recieves data from centipede.
 
 - an [ESP32](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf) that allows WIFI and Bluetooth connection with an other board, the ZED-F9P in our case.
 
@@ -29,3 +29,35 @@ The bluetooth antena must be pluged on the ESP32
 The micro USB cable links up the ESP32 with a computer for developing and debuging.
 
 <img src="images/connections.jpg" alt="connections" width=400>
+
+## Firmware
+
+The firmware can be set up using Arduino IDE and a USB connection with the ESP32 board. Our goal is to flash the ESP32 board with a program that will transfert RTCM data packets from the Ntrip client to the ZED-F9P module and the high accuracy geolocalisation data frome the ZED-F9P to the smartphone.
+
+### Firmware limitations
+
+## Smartphone
+
+We have written an Android prototype (see main repport) that can use the RTKs high accuracy. In order to use RTK on your smartphone, here are a few steps you need to follow.
+
+* Download a Ntrip client app. We will use [BlueTooth GNSS](https://play.google.com/store/apps/details?id=com.clearevo.bluetooth_gnss) in this example.
+
+<img src="images/playstore_bt_gnss.jpg" alt="connections" width=200>
+
+* Set up the centiped stream. We use CRO2 as our mount point but you should find the mount point that's closest to you (you can use this [map](https://docs.centipede.fr/))
+
+<img src="images/bt_gnss_settings_centipede.jpg" alt="connections" width=200>
+
+* Enable [developer options](https://developer.android.com/studio/debug/dev-options)
+
+* Select your Ntrip client as a mock location app
+
+<img src="images/dev_options.jpg" alt="connections" width=200>
+
+* Select the target device, the ESP32 board
+
+<img src="images/bt_gnss_settings_connection.jpg" alt="connections" width=200>
+
+* Connect to the device
+
+<img src="images/bt_gnss_connect.jpg" alt="connections" width=200>
