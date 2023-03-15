@@ -36,6 +36,10 @@ The firmware can be set up using Arduino IDE and a USB connection with the ESP32
 
 ### Firmware limitations
 
+Due to a lack of time and previous experience, we were unfortunalty not able to finish setting up the firmware. We made a [repository](https://github.com/PolyMapi/sourceRTK) dedicated to our firmware testing. In the end, we were left with a modified version of SparkFun's RTK Surveyors firmware. T
+
+he RTK Surveyor is a device made by Sparkfun that not only is an RTK rover but uses the same modules (ZED-F9P and ESP32). The RTK Surveyor does more than we need (WIFI support, RTK base, ...) so we would need to clear out the code a little but we are confident that with a couple of extra weeks dedicated to RTK, we could have made it work.
+
 ## Smartphone
 
 We have written an Android prototype (see main repport) that can use the RTKs high accuracy. In order to use RTK on your smartphone, here are a few steps you need to follow.
