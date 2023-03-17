@@ -11,3 +11,7 @@ This repo contains all the documentation
 | [Tutorial](https://github.com/PolyMapi/docs/blob/main/configuration-raspberry-ssh-partage-connexion.md)| Tethered SSH connexion over Raspberry Pi | |
 | [mapillary-api-notes](https://github.com/PolyMapi/docs/blob/main/mapillary-api-notes.md) | Notes about the Mapillary API | |
 | [pitch](https://github.com/PolyMapi/docs/blob/main/pitch.md) | Pitch written for the MPI | |
+
+## Post presentation addition
+
+Mapillary command line tool [repo](https://github.com/mapillary/mapillary_tools)
